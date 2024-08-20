@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Balls</title>
+</head>
+<style>
+      body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #61dafb;
+            text-align: center;
+            color: white;
+            font-size: 45px;
+            position:relative;
+            animation: bounce 4s ease-in-out infinite;
+        }
+
+        .ball:nth-child(2) {
+            background-color: #ff6b6b;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+
+        .ball:nth-child(3) {
+            background-color: #600dfa;
+            animation-duration: 8s;
+            animation-delay: 1.5s;
+        }
+        .ball:nth-child(4) {
+            background-color: #fc761d;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .ball:nth-child(5) {
+            background-color: #f32268;
+            animation-duration: 8s;
+            animation-delay: 1.5s;
+        }
+        .ball:nth-child(6) {
+            background-color: #7a0166;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .ball:nth-child(7) {
+            background-color: #3054f7;
+            animation-duration: 8s;
+            animation-delay: 1.5s;
+        }
+        .ball:nth-child(8) {
+            background-color: #f5503a;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+        .ball:nth-child(9) {
+            background-color: #f55cf5;
+            animation-duration: 8s;
+            animation-delay: 1.5s;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateX(+100) ;
+            }
+            30%{
+                transform: translateX(-200);
+            }
+            40%{
+                transform: translateY(+300);
+            }
+            50% {
+                transform: translateY(-400px);
+            }
+            
+            @-webkit-keyframes Blackwhite{
+                0% { background-color: white; }
+                50% { background-color: white; }
+                51% { background-color: black; }
+                100% { background-color: black; }
+            }
+        }
+</style>
+<body>
+    <div class="ball">0</div>
+    <div class="ball">1</div>
+    <div class="ball">2</div>
+    <div class="ball">3</div>
+    <div class="ball">4</div>
+    <div class="ball">5</div>
+    <div class="ball">6</div>
+    <div class="ball">7</div>
+    <div class="ball">8</div>
+    <div class="ball">9</div>
+
+</body>
+</html>
